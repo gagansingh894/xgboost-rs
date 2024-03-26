@@ -1,0 +1,19 @@
+[package]
+name = "xgboost-rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+xgboost-sys = {git = "https://github.com/gagansingh894/xgboost-sys.git"}
+derive_builder = "0.11"
+indexmap = "1.9"
+tempfile = "3.1"
+log = "0.4"
+ndarray = "0.15"
+serde = { version = "1.0", features = ["derive"], optional = true }
+libc = "0.2.153"
+
+[build-dependencies]
+xgboost-sys = {git = "https://github.com/gagansingh894/xgboost-sys.git"}
